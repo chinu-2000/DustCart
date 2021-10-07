@@ -1,0 +1,208 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #677161;
+}
+
+/*============= TOP BAR HEADER =============*/
+
+.top-bar{
+  background-color:darkolivegreen!important;
+  height: 2.8 rem ;
+  padding: .5rem 0;
+   
+}
+.top-bar a{ 
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+
+}
+
+
+
+/*============= NAVIGATION =============*/
+.navbar-brand img{
+  height: 3rem;
+
+
+}
+.navbar{
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  box-shadow: 0 .5rem .5rem rgba(0,0,0,.1) ;
+  z-index: 1 ;
+}
+.nav-item {
+  padding: .5rem;
+
+
+}
+.nav-link{
+  color:forestgreen!important;
+
+}
+
+.nav-link:hover{
+  transform: scale(1.08) ;
+  color:darkturquoise!important;
+}
+
+
+
+/*============= CAROUSEL =============*/
+#carousel{
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+
+}
+
+
+
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item-active{
+  transition: transform 1.2s ease;
+}
+
+
+/*-- Carousel Content --*/
+.carousel-caption{
+  position: absolute;
+  top: 54%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+.bg-custom{
+  background-color: rgba(0, 0, 0, .4);
+  color : white;
+  border-radius: 1rem;
+
+}
+.carousel-caption h1{
+  font-size: 3.8rem;
+  box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .1);
+
+}
+.border-primary {
+  border-top: .2rem solid green!important;
+  
+}
+.carousel-caption h3{
+  font-size: 2.2rem;
+  text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .1);  
+}
+.btn-lg{
+  border-radius: 0 ;
+  text-transform: uppercase; 
+  font-size: 1rem;
+  border-width: medium;
+}
+li{
+  display: block;
+}
+
+
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-background {
+  overflow: hidden; /*-- Correction for iOS --*/
+}
+.carousel-inner{
+  max-height: 38rem!important;
+}
+
+
+
+/*============= FOOTER =============*/
+
+footer{
+  background-color:cadetblue ;
+  padding: 1rem 2rem 3rem;
+
+}
+footer img{
+  height: 3.5rem;
+  margin: 1.5rem auto;
+  
+}
+footer p , footer a
+.socket a {
+  color: white;
+  text-decoration: none;
+}
+ul.social{
+  list-style-type : none;
+  display: flex;
+  max-width: 16rem;
+  margin: 0 auto;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+   
+}
+ul.social li{
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+}
+footer .svg-inline--fa{
+  font-size: 2.3rem;
+  color: white;
+  text-decoration: none;
+}
+footer .svg-inline--fa:hover {
+  color: white;
+  transform: scale(1.2);
+  
+}
+
+
+
+
+/*============= SOCKET =============*/
+.socket{
+  background-color:darkolivegreen;
+  border-top: .1rem solid red;
+
+
+}
+
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
